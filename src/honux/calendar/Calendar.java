@@ -5,13 +5,7 @@ import java.util.Scanner;
 public class Calendar {
 	private static final int[] MAX_DAYS = {31,28,31,30,31,30,31,31,30,31,30,31};
 	public int getMaxDaysOfMonth(int month) {
-			switch (month){
-			case 2:
-				return 28;
-			case 4:
-				return 30;
-			default:
-				return 31;}
+		return MAX_DAYS[month -1];
 	}
 	public void printSampleCalendar() {
 		System.out.println("일 월 화 수 목 금 토");
